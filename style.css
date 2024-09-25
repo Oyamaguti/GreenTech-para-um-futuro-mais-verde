@@ -75,7 +75,7 @@ header {
     height: 700px;
     border: 2px solid black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
-    right: -450px;
+    right: -500px;
     display: block;
     position: relative;
     top: -705px;
@@ -95,7 +95,7 @@ header {
     height: 700px;
     border: 2px solid black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
-    right: -900px;
+    right: -1000px;
     display: block;
     position: relative;
     top: -1406px;
