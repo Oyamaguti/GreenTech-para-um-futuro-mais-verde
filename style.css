@@ -1,0 +1,62 @@
+body {
+    font: normal 15pt Arial;
+}
+
+header {
+    color: black;
+    text-align: center;
+}
+
+#section1 {
+    border-radius: 10px;
+    padding: 0;
+    width: 800px;
+    height: 500px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
+    position: relative;
+    overflow: hidden; 
+}
+
+#imgFundo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+#section2 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
+    position: relative;
+    top: -300px;
+    right: -350px;
+    opacity: 75%;
+}
+
+#destaque1 {
+    text-align: center;
+    font-size: 28pt;
+}
+
+#textonormal {
+    font-size: 16pt;
+    text-align: justify;
+}
+
+footer {
+    color: black;
+    text-align: center;
+    font-style: italic;
+}
+
+footer:hover {
+    color: green
+}
