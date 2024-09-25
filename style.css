@@ -54,7 +54,7 @@ header {
 #section3 {
     background-color: white;
     border-radius: 10px;
-    width: 300px;
+    width: 400px;
     height: 700px;
     border: 2px solid black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
@@ -64,18 +64,18 @@ header {
 
 #img1 {
     border-radius: 10px;
-    width: 300px;
+    width: 400px;
     height: 150px;
 }
 
 #section4 {
     background-color: white;
     border-radius: 10px;
-    width: 300px;
+    width: 400px;
     height: 700px;
     border: 2px solid black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
-    right: -400px;
+    right: -450px;
     display: block;
     position: relative;
     top: -705px;
@@ -84,18 +84,18 @@ header {
 
 #img2 {
     border-radius: 10px;
-    width: 300px;
+    width: 400px;
     height: 150px;
 }
 
 #section5 {
     background-color: white;
     border-radius: 10px;
-    width: 300px;
+    width: 400px;
     height: 700px;
     border: 2px solid black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
-    right: -800px;
+    right: -900px;
     display: block;
     position: relative;
     top: -1406px;
@@ -103,7 +103,7 @@ header {
 
 #img3 {
     border-radius: 10px;
-    width: 300px;
+    width: 400px;
     height: 150px;
 }
 
