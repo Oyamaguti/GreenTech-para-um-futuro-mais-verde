@@ -1,18 +1,65 @@
+/* Estilo geral */
 body {
     font: normal 15pt Arial;
+    background-image: url(GreenTech.png);
+    background-repeat: no-repeat;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos padrão */
 }
 
-header {
+/* Estilo para o menu */
+nav {
+    background-color: white;
+    padding: 0; /* Remove padding do nav para ocupar toda a largura */
+    width: 100%; /* Garante que o nav ocupe toda a largura */
+    margin: 0; /* Remove qualquer margem */
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;  /* Distribui os itens igualmente */
+    list-style: none;
+    margin: 0; /* Remove margens da lista */
+    padding: 10px 0; /* Adiciona padding no eixo vertical */
+    width: 100%; /* Garante que o menu ocupe 100% do nav */
+    box-sizing: border-box; /* Para que o padding não afete a largura */
+}
+
+#menu li {
+    flex-grow: 1; /* Faz com que os itens cresçam igualmente */
+    text-align: center; /* Centraliza o texto dentro de cada item */
+}
+
+#menu li a {
+    text-decoration: none;
     color: black;
+    font-size: 18px;
+    font-weight: bold;
+    display: block; /* Faz o link ocupar todo o espaço do item */
+    padding: 10px 0; /* Espaçamento interno do link */
+}
+
+#menu li a:hover {
+    color: yellow;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
+/* Estilo do header */
+header {
+    color: green;
     text-align: center;
 }
 
+/* Seção de imagem de fundo */
 #section1 {
     border-radius: 10px;
     padding: 0;
     width: 800px;
     height: 500px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
     position: relative;
     overflow: hidden; 
 }
@@ -27,18 +74,17 @@ header {
     border-radius: 10px;
 }
 
+/* Seção de destaque */
 #section2 {
     background-color: white;
     border-radius: 10px;
     padding: 15px;
     width: 500px;
     height: 300px;
-    border: 2px solid black;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
     position: relative;
     top: -300px;
     right: -350px;
-    opacity: 75%;
+    opacity: 70%;
 }
 
 #destaque1 {
@@ -51,62 +97,48 @@ header {
     text-align: justify;
 }
 
-#section3 {
+/* Estilo das demais seções */
+#section3, #section4, #section5 {
     background-color: white;
     border-radius: 10px;
     width: 400px;
-    height: 700px;
-    border: 2px solid black;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
+    height: 800px;
+    box-shadow: 5px 5px 10px gray;
     display: block;
     position: relative;
-}
-
-#img1 {
-    border-radius: 10px;
-    width: 400px;
-    height: 150px;
 }
 
 #section4 {
-    background-color: white;
-    border-radius: 10px;
-    width: 400px;
-    height: 700px;
-    border: 2px solid black;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
     right: -450px;
-    display: block;
-    position: relative;
-    top: -705px;
-
-}
-
-#img2 {
-    border-radius: 10px;
-    width: 400px;
-    height: 150px;
+    top: -798px;
 }
 
 #section5 {
-    background-color: white;
-    border-radius: 10px;
-    width: 400px;
-    height: 700px;
-    border: 2px solid black;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
     right: -900px;
-    display: block;
-    position: relative;
-    top: -1406px;
+    top: -1597px;
 }
 
-#img3 {
+#destaquedourado {
+    text-align: center;
+    font-size: 28pt;
+}
+
+#destaquedourado:hover {
+    color: rgb(51, 241, 51);
+}
+
+#textonormal2 {
+    font-size: 20pt;
+}
+
+/* Estilo das imagens */
+#img1, #img2, #img3 {
     border-radius: 10px;
     width: 400px;
-    height: 150px;
+    height: 400px;
 }
 
+/* Estilo do footer */
 footer {
     color: black;
     text-align: center;
@@ -114,5 +146,5 @@ footer {
 }
 
 footer:hover {
-    color: green
+    color: green;
 }
