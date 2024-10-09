@@ -1,33 +1,33 @@
 /* Estilo geral */
 body {
     font: normal 15pt Arial;
-    background-image: url(GreenTech.png);
-    background-repeat: no-repeat;
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove espaçamentos padrão */
+    background-image: url(GreenTech.jpg);
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
 }
 
 /* Estilo para o menu */
 nav {
     background-color: white;
-    padding: 0; /* Remove padding do nav para ocupar toda a largura */
-    width: 100%; /* Garante que o nav ocupe toda a largura */
-    margin: 0; /* Remove qualquer margem */
+    padding: 0; 
+    width: 100%;
+    margin: 0;
 }
 
 #menu {
     display: flex;
-    justify-content: space-around;  /* Distribui os itens igualmente */
+    justify-content: space-around; 
     list-style: none;
-    margin: 0; /* Remove margens da lista */
-    padding: 10px 0; /* Adiciona padding no eixo vertical */
-    width: 100%; /* Garante que o menu ocupe 100% do nav */
-    box-sizing: border-box; /* Para que o padding não afete a largura */
+    margin: 0; 
+    padding: 10px 0;
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 #menu li {
-    flex-grow: 1; /* Faz com que os itens cresçam igualmente */
-    text-align: center; /* Centraliza o texto dentro de cada item */
+    flex-grow: 1; 
+    text-align: center; 
 }
 
 #menu li a {
@@ -35,8 +35,8 @@ nav {
     color: black;
     font-size: 18px;
     font-weight: bold;
-    display: block; /* Faz o link ocupar todo o espaço do item */
-    padding: 10px 0; /* Espaçamento interno do link */
+    display: block; 
+    padding: 10px 0; 
 }
 
 #menu li a:hover {
@@ -97,25 +97,54 @@ header {
     text-align: justify;
 }
 
-/* Estilo das demais seções */
-#section3, #section4, #section5 {
-    background-color: white;
-    border-radius: 10px;
-    width: 400px;
-    height: 800px;
-    box-shadow: 5px 5px 10px gray;
-    display: block;
-    position: relative;
+/* Garantir que todos os h2 estejam alinhados e com o mesmo tamanho */
+#section3 h2, #section4 h2, #section5 h2 {
+    font-size: 28px; /* Ajuste para tamanho adequado */
+    margin: 0; /* Remover margem para um melhor alinhamento */
+    text-align: center; /* Garantir alinhamento ao centro */
+}
+
+#section3 {
+    height: 700px;
 }
 
 #section4 {
-    right: -450px;
-    top: -798px;
+    height: 700px;
+}
+#section5 {
+    height: 700px;
 }
 
-#section5 {
-    right: -900px;
-    top: -1597px;
+/* Aumentar a largura das sections e garantir espaço entre elas */
+.sections-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Garantir que os itens se estiquem para a mesma altura */
+    width: 100%; /* Use 100% da largura disponível */
+    max-width: 1200px; /* Aumentar o limite de largura */
+    height: 1000px;
+    margin: 50px auto;
+    padding: 0 40px; /* Ajustar o padding para dar mais espaço interno */
+    gap: 40px; /* Aumentar o espaço entre as sections */
+}
+
+.section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    width: 30%; /* Ajustar a largura das sections para que ocupem mais espaço */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuir o espaço verticalmente */
+    height: 400px; /* Defina uma altura fixa para garantir alinhamento */
+}
+
+.section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 #destaquedourado {
@@ -129,13 +158,14 @@ header {
 
 #textonormal2 {
     font-size: 20pt;
+    margin-top: 15px;
 }
 
-/* Estilo das imagens */
-#img1, #img2, #img3 {
-    border-radius: 10px;
-    width: 400px;
-    height: 400px;
+/* Estilo do vídeo de fundo */
+.video-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
 }
 
 /* Estilo do footer */
