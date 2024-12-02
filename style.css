@@ -1,0 +1,288 @@
+/* Estilo geral */
+body {
+    font: normal 15pt Arial;
+    background-image: url(GreenTech.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o menu */
+nav {
+    background-color: white;
+    padding: 0; 
+    width: 100%;
+    margin: 0;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around; 
+    list-style: none;
+    margin: 0; 
+    padding: 10px 0;
+    width: 100%; 
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+#menu li {
+    flex-grow: 1; 
+    text-align: center; 
+}
+
+#menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    display: block; 
+    padding: 10px 0; 
+}
+
+#menu li a:hover {
+    color: yellow;
+}
+
+#logo {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.botaosaibamais {
+    color: black;
+    background-color: transparent;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+/* Estilo do header */
+header {
+    color: green;
+    text-align: center;
+    font-size: 24pt;
+}
+
+/* Seção de imagem de fundo */
+#section1 {
+    border-radius: 10px;
+    padding: 0;
+    width: 800px;
+    height: 500px;
+    position: relative;
+    overflow: hidden; 
+}
+
+#imgFundo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+
+/* Seção de destaque */
+#section2 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: -300px;
+    right: -350px;
+    opacity: 70%;
+}
+
+#destaque1 {
+    text-align: center;
+    font-size: 28pt;
+}
+
+#textonormal {
+    font-size: 16pt;
+    text-align: justify;
+}
+
+/* Garantir que todos os h2 estejam alinhados e com o mesmo tamanho */
+#section3 h2, #section4 h2, #section5 h2 {
+    font-size: 28px; /* Ajuste para tamanho adequado */
+    margin: 0; /* Remover margem para um melhor alinhamento */
+    text-align: center; /* Garantir alinhamento ao centro */
+}
+
+#section3 {
+    height: 700px;
+}
+
+#section4 {
+    height: 700px;
+}
+#section5 {
+    height: 700px;
+}
+
+/* Aumentar a largura das sections e garantir espaço entre elas */
+.sections-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Garantir que os itens se estiquem para a mesma altura */
+    width: 100%; /* Use 100% da largura disponível */
+    max-width: 1200px; /* Aumentar o limite de largura */
+    height: 1000px;
+    margin: 50px auto;
+    padding: 0 40px; /* Ajustar o padding para dar mais espaço interno */
+    gap: 40px; /* Aumentar o espaço entre as sections */
+}
+
+.section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    width: 30%; /* Ajustar a largura das sections para que ocupem mais espaço */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuir o espaço verticalmente */
+    height: 400px; /* Defina uma altura fixa para garantir alinhamento */
+}
+
+.section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#destaquedourado {
+    text-align: center;
+    font-size: 28pt;
+}
+
+#destaquedourado:hover {
+    color: rgb(51, 241, 51);
+}
+
+#textonormal2 {
+    font-size: 20pt;
+}
+
+/* Estilo para o vídeo */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.container {
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.gallery-wrapper {
+    overflow-x: auto;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+.swipe-slides {
+    margin-bottom: 2em;
+}
+
+.faladocara {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  color: #fff;
+  transition: all 600ms ease-in-out;
+  background: linear-gradient(to left, transparent 0%, black 200%);
+  opacity: 0.1;
+  cursor: pointer;
+  border: none;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.arrow-right {
+  right: 0;
+  left: auto;
+  text-align: right;
+  background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.item {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: all 600ms ease-in-out;
+}
+
+.current-item {
+    opacity: 1;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.gallery-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+  
+.reviews {
+    text-align: center;
+    font-size: 36pt;
+    color: green;
+}
+
+/* Rodapé */
+footer {
+    background-color: white;
+    height: 100px;
+    text-align: center;
+    font-size: 24pt;
+}
+
+footer-text {
+    margin: 0;
+}
+
+.text-menu a:link {
+    color: green;
+    text-decoration: none;
+}

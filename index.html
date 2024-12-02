@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenTech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li> <img src="logoGreenTech.jpg" id="logo"> </li>
+                <li><a href="#section1">Início</a></li>
+                <li><a href="#section3">Recursos</a></li>
+                <li><a href="#section4">Serviços</a></li>
+                <li><a href="#section5">Benefícios</a></li>
+                <input type="button" value="Saiba mais" onclick="saibamais()" class="botaosaibamais">
+            </ul>
+        </nav>
+        <h1>GreenTech</h1>
+    </header>
+    <section id="section1">
+        <div>
+            <img src="fundo.jpg" alt="Imagem de fundo" id="imgFundo">
+        </div>
+    </section>
+    <section id="section2">
+        <p id="destaque1"> A melhor solução para o plantio automático</p>
+        <p id="textonormal"> <strong>Soluções inteligentes para cuidar de suas plantas 24 horas por dia, com tecnologia de ponta que reconhece as necessidades e otimiza os recursos</strong> </p>
+    </section>
+
+    <!-- Container para as sections 3, 4 e 5 -->
+    <div class="sections-container">
+        <section id="section3" class="section">
+            <img src="imagem1.jpeg" id="img1">
+            <div id="section-destaque-titulo"> 
+                <h2 id="destaquedourado">Recursos</h2>
+            </div>
+            <div id="textonormal2"> 
+                <ul>
+                    <li>Estrutura da base</li>
+                    <li>Cúpula de acrílico</li>
+                    <li>Tela</li>
+                    <li>Climatizadores</li>
+                    <li>Sensores que medem temperatura e umidade</li>
+                    <li>Lâmpadas</li>
+                    <li>Sistema de I.A</li>
+                </ul>
+            </div>
+        </section>
+        <section id="section4" class="section">
+            <img src="imagem2.jpeg" id="img2">
+            <div id="section-destaque-titulo2"> 
+                <h2 id="destaquedourado">Serviços</h2>
+            </div>
+            <div id="textonormal2">
+                <ul>
+                    <li>As Mini Estufas que a GreenTech apresenta</li>
+                    <li>A Mini Estufa Pequena: Lados de 30cm</li>
+                    <li>A Mini Estufa Média: Lados de 40cm</li>
+                    <li>A Mini Estufa Grande: Lados de 50cm</li>
+                </ul>
+            </div>
+        </section>
+        <section id="section5" class="section">
+            <img src="imagem3.jpeg" id="img3">
+            <div id="section-destaque-titulo3"> 
+                <h2 id="destaquedourado">Benefícios</h2>
+            </div>
+            <div id="textonormal2">
+                <ul>
+                    <li>Sustentável</li>
+                    <li>Material durável de alta qualidade</li>
+                    <li>Economia de espaço</li>
+                    <li>Ambiente controlado e automático</li>
+                    <li>Estética moderna e inovadora</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Vídeo -->
+    <section>
+        <div class="video-container">
+            <iframe 
+                id="meuVideo" 
+                width="100%" 
+                height="500" 
+                src="https://www.youtube.com/embed/8Zqm8D9FOcE?autoplay=1&mute=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <h2 class="reviews">Algumas reviews sobre nossos produtos</h2>
+
+    <section class="swipe-slides">
+        <div class="container">
+            <button class="arrow-left control" aria-label="Previous image"> ◀ </button>
+            <button class="arrow-right control" aria-label="Next image"> ▶ </button>
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <div class="faladocara current-item"><img src="pessoa.jpg" height="250" width="250" class="item current-item"> <h4> Débora </h4> <p>""Perfeita para minha cozinha! Cultivo temperos frescos sem esforço. Prática e funcional!"
+                    </p></div>
+                    <div class="faladocara"><img src="pessoa2.jpg" height="250" width="250" class="item"> <h4> Roger </h4> <p> "Tecnológica e moderna, a GreenTech transformou meu lar. Simples de usar e eficiente!"</p></div>
+                    <div class="faladocara"><img src="pessoa3.jpg" height="250" width="250" class="item"> <h4> Pedro </h4> <p> "Excelente para iniciantes! Fácil de usar, com ótimas recomendações automáticas."                    </p> </div>
+                    <div class="faladocara"><img src="pessoa4.jpg" height="250" width="250" class="item"><h4> Camila </h4> <p> "Sustentável e prática! Cultivo plantas com economia e respeito ao meio ambiente." </p></div>
+                    <div class="faladocara"><img src="pessoa5.jpg" height="250" width="250" class="item"><h4> César </h4> <p> "Compacta e funcional, a estufa é ideal para pequenos espaços. Super recomendo!"                    </p></div>
+                    <div class="faladocara"><img src="pessoa6.jpg" height="250" width="250" class="item"><h4> Vera Lúcia </h4> <p> "Prática e bonita! Não preciso me preocupar com nada, apenas aproveito os resultados."                    </p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p">&copy; 2024 GreenTech. Todos os direitos reservados</p>
+        <p class="text-menu">
+            Github: <a href="https://github.com/Oyamaguti" rel="external" target="_blank">Vinicius</a> | 
+            Github: <a href="https://github.com/KauaniFb/KauaniFb" rel="external" target="_blank">Kauani</a> | 
+            Github: <a href="https://github.com/NathanEABev" rel="external" target="_blank">Nathan</a>
+        </p>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <!-- 
+1. Saiba mais descrevendo mais os produtos        
+2. FAQ (Perguntas Frequentes)
+3. Políticas de compra - Informações sobre entrega, devoluções e garantias.
+4. Links para perfis de redes sociais e a possibilidade de compartilhar produtos.
+    -->
